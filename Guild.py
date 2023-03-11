@@ -15,6 +15,10 @@ def GuildGet():
         time.sleep(1.4)
 
     if py.locateOnScreen(r"assets\guild\Present.PNG", confidence=0.85):
+        FindandClick.findandClick(r"assets\guild\Message.PNG")
+        time.sleep(0.9)
+        FindandClick.findandClick(r"assets\guild\X.PNG")
+        time.sleep(1.1)
         FindandClick.findandClick(r"assets\guild\Present.PNG")
         time.sleep(0.9)
         FindandClick.findandClick(r"assets\guild\In.PNG")

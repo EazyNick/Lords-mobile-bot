@@ -34,7 +34,8 @@ class Window:
 
     def getWindow(self):
         def callback(hwnd, extra):
-            if win32gui.GetWindowText(hwnd) == 'BlueStacks App Player 2':
+            if win32gui.GetWindowText(hwnd) == 'BlueStacks App Player':
+            #if win32gui.GetWindowText(hwnd) == 'BlueStacks App Player 2':
                 rect = win32gui.GetWindowRect(hwnd)
                 x = rect[0]
                 y = rect[1]

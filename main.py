@@ -1,4 +1,5 @@
 from window import Window
+import keyboard
 from findandclick import Scroll
 import time
 from Guild import GuildGet
@@ -10,7 +11,7 @@ from Product import *
 Window()
 time.sleep(0.1)
 
-while True:
+while keyboard.is_pressed('q') == False:
     GreenBoxGet()
     time.sleep(0.1)
     GuildGet()
